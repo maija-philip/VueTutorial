@@ -1,41 +1,20 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Input from './components/Input.vue'
+import TodoItem from './components/TodoItem.vue'
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <HelloWorld msg="You did it!" />
-  </header>
+  <section>
+    <h1>Todo List</h1>
+    <Input value="" />
+    <TodoItem name="finish project" />
+  </section>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+section {
+  width: 60%;
+  margin: auto;
+  text-align: center;
 }
 </style>
