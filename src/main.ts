@@ -13,9 +13,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faXmark)
+library.add(faXmark, faPaperPlane)
 
 const app = createApp(App).component('font-awesome-icon', FontAwesomeIcon)
 

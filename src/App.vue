@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import Input from './components/Input.vue'
-import TodoItem from './components/TodoItem.vue'
+import TodoListItems from './components/TodoListItems.vue'
+import { ref, onMounted, computed, watch } from 'vue'
 </script>
 
 <template>
   <section>
-    <h1>Todo List</h1>
-    <Input value="" />
-    <TodoItem name="finish project" />
+    <h1>My Todo List</h1>
+    <Input />
+    <br />
+    <TodoListItems />
   </section>
 </template>
 
@@ -16,5 +18,9 @@ section {
   width: 60%;
   margin: auto;
   text-align: center;
+}
+
+h1 {
+  font-size: 4em;
 }
 </style>
