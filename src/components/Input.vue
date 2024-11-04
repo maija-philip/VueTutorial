@@ -7,7 +7,11 @@ const item = ref('')
 
 function addTask() {
   if (item.value) {
-    taskStore.addTask(item.value)
+    const newTask = {
+      id: taskStore.tasks.length+1, 
+      name: item.value, 
+    }
+    taskStore.addTask(newTask)
     item.value = ''
   } else {
     console.log('No task')

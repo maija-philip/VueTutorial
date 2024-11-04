@@ -3,13 +3,14 @@ import { defineStore } from 'pinia'
 
 export const useTaskStore = defineStore('tasks', () => {
   const tasks = ref([
-    'Finish Project',
-    'Complete Presentation',
-    'Create starter files',
-    'create lesson plan',
-    'teach class',
+    { id: 1, name: 'Finish Project' },
+    { id: 2, name: 'Complete Presentation' },
+    { id: 3, name: 'Create starter files' },
+    { id: 4, name: 'Create lesson plan' },
+    { id: 5, name: 'Teach class' },
   ])
-  function addTask(newTask: string) {
+  
+  function addTask(newTask: { id: number; name: string }) {
     tasks.value.push(newTask)
   }
 
