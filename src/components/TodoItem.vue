@@ -1,22 +1,6 @@
-<script setup lang="ts">
-defineProps<{
-  name: string
-  index: number
-}>()
+<!-- Add setup script with params  -->
 
-import { useTaskStore } from '@/stores/tasks'
-
-const taskStore = useTaskStore()
-</script>
-
-<template>
-  <div class="todo-item">
-    <p class="item-name">{{ name }}</p>
-    <button @click="taskStore.deleteTask(index)">
-      <font-awesome-icon :icon="['fas', 'xmark']" class="icon" />
-    </button>
-  </div>
-</template>
+<template></template>
 
 <style scoped>
 .todo-item {

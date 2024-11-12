@@ -1,15 +1,10 @@
 <script setup lang="ts">
-import Input from './components/Input.vue'
-import TodoListItems from './components/TodoListItems.vue'
 import { ref, onMounted, computed, watch } from 'vue'
 </script>
 
 <template>
   <section>
     <h1>My Todo List</h1>
-    <Input />
-    <br />
-    <TodoListItems />
   </section>
 </template>
 

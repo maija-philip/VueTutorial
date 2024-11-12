@@ -1,36 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted, computed, watch } from 'vue'
-import { useTaskStore } from '@/stores/tasks'
-
-const taskStore = useTaskStore()
-const item = ref('')
-
-function addTask() {
-  if (item.value) {
-    taskStore.addTask(item.value)
-    item.value = ''
-  } else {
-    console.log('No task')
-  }
-}
+// use store and create a state variable called item
+// add task function
 </script>
 
-<template>
-  <div class="todo-input">
-    <label for="item">New Item</label>
-    <div>
-      <input
-        type="text"
-        v-model="item"
-        placeholder="Add a new task ..."
-        @keyup.enter="addTask()"
-      />
-      <button @click="addTask()">
-        <font-awesome-icon :icon="['fas', 'paper-plane']" />
-      </button>
-    </div>
-  </div>
-</template>
+<template></template>
 
 <script lang="ts"></script>
 
